@@ -58,10 +58,10 @@ export function reduce() {
 
 // 5. Sort the inventors by years lived and return the sorted array
 export function sortbylived() {
-	return inventors.sort((a, b) => {
+	 return inventors.sort((a, b) => {
         const yearsLivedA = a.passed - a.year;
         const yearsLivedB = b.passed - b.year;
-        return yearsLivedA - yearsLivedB;
+        return yearsLivedB - yearsLivedA; // Sort in descending order
     });
 }
 
